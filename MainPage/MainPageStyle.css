@@ -88,6 +88,7 @@ a {
 .divPage {
     display: inline-block;
     margin: 0 70px;
+    width: 700px;
 }
 
 .PLetters {
@@ -179,7 +180,7 @@ a.Buttons {
 
 #Picturediv {
     float: right;
-    margin: 50px 200px;
+    margin: 5% 10%;
 }
 
 #Picturediv img {
