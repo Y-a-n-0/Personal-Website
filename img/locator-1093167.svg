@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_1" data-name="图层_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1273 1586">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        mask: url(#mask);
+      }
+
+      .st2 {
+        filter: url(#b);
+      }
+
+      .st3 {
+        isolation: isolate;
+      }
+
+      .st4 {
+        fill: #58595b;
+      }
+    </style>
+    <filter id="b" x="465.1" y="1683.9" width="376.89" height="92.661">
+      <feFlood flood-color="white" result="back"/>
+      <feBlend in="SourceGraphic" in2="back"/>
+    </filter>
+    <mask id="mask" x="464.4" y="1488.3" width="3183.7" height="1741.2" maskUnits="userSpaceOnUse">
+      <g id="a">
+        <g class="st2">
+          <image class="st3" width="382" height="99" transform="translate(464.4 1488.3) scale(1)" xlink:href="locator-1093167-1.png"/>
+        </g>
+      </g>
+    </mask>
+  </defs>
+  <path class="st0" d="M632.1,19.9c-292.6,0-529.9,237.2-529.9,529.9s37.9,224.9,102,312.5l427.9,690.2,427.9-690.2c64.1-87.6,102-195.6,102-312.5,0-292.6-237.2-529.9-529.9-529.9h0ZM632.1,773.3c-146.5,0-265.3-118.8-265.3-265.3s118.8-265.3,265.3-265.3,265.3,118.8,265.3,265.3-118.8,265.3-265.3,265.3Z"/>
+  <g class="st1">
+    <ellipse class="st4" cx="653.5" cy="1537.2" rx="188.5" ry="46.3"/>
+  </g>
+</svg>

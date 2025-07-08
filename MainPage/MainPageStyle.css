@@ -1,0 +1,205 @@
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Microsoft Yahei;
+    font-weight: bold;
+}
+
+#BackgroundCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* 置于底层 */
+    pointer-events: none;
+    /* 允许穿透点击 */
+    filter: blur(200px);
+}
+
+#YanLogo {
+    margin: 5px 2em;
+    width: 100px;
+    height: 100;
+    filter: drop-shadow(0 0 5px black);
+}
+
+.divs {
+    z-index: 1000;
+    position: fixed;
+    width: 95%;
+    border-radius: 20px;
+    display: flex;
+    background: linear-gradient(to right, #2121218a, #3232328a);
+    align-items: center;
+    justify-content: space-between;
+    /* 新增，使两端对齐 */
+    padding: 0 2em;
+    /* 可选，让内容不贴边 */
+}
+
+#WebTitle {
+    margin-left: 2em;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+#Nav {
+    font-size: 20px;
+    margin-left: 2em;
+    display: flex;
+    list-style-type: none;
+}
+
+#Nav li {
+    margin: 0 2em;
+    color: #14FFEC;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#Nav li:hover {
+    color: #14FFEC;
+    transform: translate(0px, -5px);
+}
+
+#Nav li.active a{
+    color: #14FFEC !important;
+    text-shadow: #14FFEC 0px 0px 30px !important;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out, text-transform 0.3s ease-in-out;
+}
+
+#Nav a:hover {
+    color: #14FFEC;
+    text-shadow: #14FFEC 0px 0px 30px;
+}
+
+.divPage {
+    display: inline-block;
+    margin: 0 70px;
+}
+
+.PLetters {
+    text-indent: 2em;
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 30px;
+    margin-left: 30px;
+    color: #ffffff;
+    width: 700px;
+    word-wrap: break-word;
+    justify-content: center;
+    text-shadow: white 0 0 3px;
+}
+
+#GreatAtBugs {
+    text-decoration: line-through;
+    color: rgb(255, 61, 61);
+    text-shadow: rgb(255, 61, 61) 0 0 10px;
+}
+
+#RocketLeague {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#RocketLeague span a {
+    color: #14FFEC;
+    text-shadow: #14FFEC 0 0 10px;
+}
+
+#Hello {
+    cursor: default;
+    width: fit-content;
+    margin: 0 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 50px;
+    color: #14FFEC;
+    text-shadow: #14FFEC 0 0 5px;
+}
+
+#Hello::after {
+    content: "|";
+    animation: blink 1.0s infinite;
+    align-items: baseline;
+    display: inline-block;
+    vertical-align: top;
+    font-size: inherit;
+    position: relative;
+    top: -5px;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+a.Buttons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: #ffffff 0 0 5px;
+    border: #212121aa solid 2px;
+    background-color: #212121aa;
+    border-radius: 40px;
+    height: 1.5em;
+    width: 4em;
+    margin-left: 3em;
+    transition: all 0.2s ease-in-out;
+}
+
+.Buttons:hover {
+    transform: scale(20px 20px);
+    border: #14FFEC solid 2px;
+    box-shadow: #14FFEC 0 0 50px;
+    background-color: #323232;
+    transform: translateY(-5px) scale(1.1);
+}
+
+#Picturediv {
+    float: right;
+    margin: 50px 200px;
+}
+
+#Picturediv img {
+    filter: drop-shadow(0 0 5px #14FFEC) drop-shadow(0 0 20px #14FFEC);
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+section {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 250px;
+    box-sizing: border-box;
+    overflow: hidden;
+}

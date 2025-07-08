@@ -1,0 +1,130 @@
+.projects-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px; /* 为按钮留出空间 */
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.project {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    min-width: 0; /* 防止项目内容溢出 */
+}
+
+.project-content {
+    background: #323232aa;
+    height: 300px; /* 增加高度 */
+    border-radius: 10px;
+    box-shadow: #323232 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-content:hover{
+    transform: scale(1.02);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #14FFEC;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.arrow:hover {
+    background: #14FFEC;
+    box-shadow: #14FFEC 0 0 15px;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.arrow.left {
+    left: 0;
+    top: 170px;
+}
+
+.arrow.left img{
+    margin-top: 5px;
+}
+
+.arrow.right {
+    right: 0;
+    top: 170px;
+}
+
+.arrow.right img{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.dot:hover{
+    transform: scale(1.2);
+}
+
+.dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+.githuburl{
+    text-decoration: underline;
+}
+
+.ProgramName{
+    color:#14FFEC;
+    text-shadow: #14FFEC 0 0 5px;
+}
+
+.ProgramIntroduction{
+    width: 500px;
+    margin: 0;
+    font-size: 20px;
+    text-indent: 1em;
+    
+}

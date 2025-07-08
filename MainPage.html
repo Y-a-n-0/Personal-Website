@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Yan's Web</title>
+    <link rel="stylesheet" href="MainPage/MainPageStyle.css" />
+    <link rel="stylesheet" href="SkillsPage/SkillsPageStyles.css" />
+    <link rel="stylesheet" href="AboutPage/AboutPageStyles.css" />
+    <link rel="stylesheet" href="ProgramPage/ProgramPageStyle.css" />
+    <link rel="stylesheet" href="ContactPage/ContactPageStyles.css">
+    <link rel="icon" href="img/Yan LOGO-Y.svg" type="image/x-icon">
+    <script src="MainPage/HelloAnime.js" defer></script>
+    <script src="MainPage/BackgroundAnime.js" defer></script>
+    <script src="ProgramPage/Slider.js" defer></script>
+    <script src="ContactPage/Copy.js" defer></script>
+    <script src="MainPage/Nav.js" defer></script>
+</head>
+
+<body>
+    <canvas id="BackgroundCanvas"></canvas>
+    <div class="divs">
+        <img src="img/Yan's LOGO.svg" id="YanLogo" width="100">
+        <ul id="Nav">
+            <li class="main-page">0<a href="#MainPage">.首页 </a></li>|
+            <li class="about-page">1<a href="#About">.关于 </a></li>|
+            <li class="skills-page">2<a href="#Skills">.技能 </a></li>|
+            <li class="program-page">3<a href="#Program">.项目 </a></li>|
+            <li class="contact-page">4<a href="#Contact">.联系 </a></li>|
+            <li class="other-page">5<a href="#Other">.其他 </a></li>
+        </ul>
+    </div>
+
+    <!--Main Page-->
+    <section id="MainPage">
+        <div class="divPage">
+            <p id="Hello" onmouseover="ChangeHelloLang()">你好!</p>
+            <p class="PLetters">我是颜弃，一个编程小白。<br><span style="padding-left: 2em;">在</span>代码的世界里到处碰壁，
+                <span id="GreatAtBugs">擅长写bug</span>我逐步掌握了程序的本质逻辑，正努力成长为一名真正的开发者。热衷折腾C++、C#。平日里也喜欢玩游戏
+                <span id="RocketLeague">强烈推荐
+                    <span><a href="https://www.rocketleague.com/en" target="_blank">火箭联盟</a></span>!
+                </span>
+                <br><span style="padding-left: 2em;">梦</span>想是独立开发一个游戏，有创意的游戏。
+            </p>
+            <a href="#About" class="Buttons">关于我</a>
+            <a href="#Contact" class="Buttons">联系我</a>
+        </div>
+        <div id="Picturediv">
+            <img src="img/Yan LOGO-Y.svg" width="400" alt="样貌不重要:）">
+        </div>
+    </section>
+
+    <!--About Page-->
+    <section id="About">
+        <div id="AboutPage">
+            <p id="AboutLetter">关于:</p>
+            <p class="PLetters">20年的人生游戏并没有觉得很精彩,直到我接触了编程。我不止一次后悔没有早点研究代码，但是时间还很长，我会一直努力。</p>
+        </div>
+        <div>
+            <p class="PLetters" id="AboutPageRightContent">
+                2024年9月1日，是我正式踏入校园、系统接触计算机领域的起点。虽然早在高一阶段，我就已经学习过Python，并且取得了不错的成绩，展现出一定的编程天赋，但当时的教学更多是为了应试，内容浅尝辄止，我也未能深入探索。<br>
+                <span style="padding-left: 2em;">如</span>今，接触编程已有十个月，我的热情丝毫未减。对技术的强烈好奇心驱使我不断尝试新领域——从用C语言写下第一个"Hello
+                World!"，到逐步涉猎更多方向，每一步都让我收获成长。遗憾的是，当前学校课程仍以基础理论为主，缺少系统化的项目实战环节，这也促使我更加依赖自学，通过动手实践搭建起属于自己的技术体系。因此，我的知识体系几乎全部源于自学，而网络成了我最宝贵的资源库。与按部就班学习理论不同，我更喜欢通过实践来驱动学习——直接动手写项目，在解决问题中积累经验。目前，只有C++是我唯一系统学完所有教学视频的语言。<br>
+                <span
+                    style="padding-left: 2em;">我</span>的心中始终有一个终极目标：开发一款受玩家喜爱的独立游戏。这条路或许漫长，但每一次代码的编写、每一个功能的实现，都在让我离梦想更近一步。
+            </p>
+        </div>
+    </section>
+
+    <!--Skills Page-->
+    <section id="Skills">
+        <div class="divPage">
+            <p class="CyanLetter">技能:</p>
+            <p class="PLetters">我的学习路径be like:</p>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="timeline-milestones">
+                <!-- 里程碑1 -->
+                <div class="milestone">
+                    <div class="milestone-point"></div>
+                    <div class="milestone-header">
+                        <div class="milestone-label">C</div>
+                        <img id="C" class="milestone-icon" src="img/C.svg" width="50px">
+                    </div>
+                    <div class="milestone-date">2024-09</div>
+                    <div class="tooltip">
+                        <h3>C语言</h3>
+                        <p>我的第一个深入学习的编程语言。虽然没有做出实际项目，但正是在这段学习中，我真正理清了编程的基本逻辑，算是正式踏入了这条路的大门。</p>
+                    </div>
+                </div>
+
+                <!-- 里程碑2 -->
+                <div class="milestone">
+                    <div class="milestone-point"></div>
+                    <div class="milestone-header">
+                        <div class="milestone-label">C++</div>
+                        <img id="CPP" class="milestone-icon" src="img/C++.svg" width="50px">
+                    </div>
+                    <div class="milestone-date">2025-02</div>
+                    <div class="tooltip">
+                        <h3>C++</h3>
+                        <p>学习C++的过程让我一度头大，但也收获颇丰。配合 EasyX 图形库，我完成了人生中第一个游戏项目，并凭此获得了上海市计算机应用能力大赛二等奖。</p>
+                    </div>
+                </div>
+
+                <!-- 里程碑3 -->
+                <div class="milestone">
+                    <div class="milestone-point"></div>
+                    <div class="milestone-header">
+                        <div class="milestone-label">C#</div>
+                        <img class="milestone-icon" id="CS" src="img/CS.svg" width="50px">
+                    </div>
+                    <div class="milestone-date">2025-04</div>
+                    <div class="tooltip">
+                        <h3>C#</h3>
+                        <p>我用C#编写了我的第一个实际应用程序：一个简洁的计算器，以及一个游戏数值修改器。也算是初次尝试将编程成果用于“实用”层面。</p>
+                    </div>
+                </div>
+
+                <!-- 里程碑4 -->
+                <div class="milestone">
+                    <div class="milestone-point"></div>
+                    <div class="milestone-header">
+                        <div class="milestone-label">HTML</div>
+                        <img id="HTML" class="milestone-icon" src="img/HTML.svg" width="50px">
+                    </div>
+                    <div class="milestone-date">2025-07</div>
+                    <div class="tooltip">
+                        <h3>HTML/CSS</h3>
+                        <p>在学校的计算机职业实践课上，我第一次接触到了Web前端开发。从排版到样式，从“能用”到“设计”，开启了我对网页设计的兴趣。</p>
+                    </div>
+                </div>
+
+                <!-- 里程碑5 -->
+                <div class="milestone">
+                    <div class="milestone-point"></div>
+                    <div class="milestone-header">
+                        <div class="milestone-label">More&nbsp;And&nbsp;More</div>
+                    </div>
+                    <div class="milestone-date">...</div>
+                    <div class="tooltip">
+                        <h3>学无止境</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Program Page-->
+    <!-- 修改Program部分 -->
+    <section id="Program">
+        <div class="divPage">
+            <p class="CyanLetter">项目:</p>
+            <p class="PLetters" style="margin: 10px 0 0 0;">点击图片跳转Github页面</p>
+        </div>
+        <div class="projects-container">
+            <button class="arrow left"><img src="img/Arrow-left.svg"></button>
+            <div class="carousel-wrapper">
+                <div class="carousel" id="carousel">
+                    <div class="project">
+                        <div class="project-content"><a target="_blank"
+                                href="https://github.com/Y-a-n-0/Calculator"><video src="videos/Calculator.mp4" muted
+                                    loop autoplay height="290px" style="border-radius: 10px;"></video></a></div>
+                        <p class="PLetters ProgramName" style="width: 550px; margin: 0;">简易计算器</p>
+                        <p class="PLetters ProgramIntroduction">我的第一个C#项目，主要是练习XAML控件和C#语法。</p>
+                    </div>
+                    <div class="project">
+                        <div class="project-content"><a target="_blank"
+                                href="https://github.com/Y-a-n-0/Brotato-Trainer"><video
+                                    src="videos/Brotato Trainer.mp4" muted loop autoplay height="290px"
+                                    style="border-radius: 10px;"></video></a></div>
+                        <p class="PLetters ProgramName" style="width: 550px; margin: 0;">《土豆兄弟》修改器</p>
+                        <p class="PLetters ProgramIntroduction">我的第二个C#项目，使用C++编写DLL实现对游戏内存的读写操作，配合C#编写用户界面，实现了跨语言协作开发。</p>
+                    </div>
+                    <div class="project">
+                        <div class="project-content"><a target="_blank"
+                                href="https://github.com/Y-a-n-0/LearChineseWithNeZha"><img src="img/Programs/Nezha.png"
+                                    width="500px" style="border-radius: 10px;"></img></a></div>
+                        <p class="PLetters ProgramName" style="width: 550px; margin: 0;">获奖作品《跟着吒儿学汉字》</p>
+                        <p class="PLetters ProgramIntroduction">我的第一个C++游戏项目，使用EasyX图形库编写（是的非常老），个人感觉非常简陋，但居然我用它获奖了（摊手）
+                        </p>
+                    </div>
+                    <div class="project">
+                        <div class="project-content"><a target="_blank"
+                                href="https://github.com/Y-a-n-0/BoringTraningPlugin"><img src="img/rocket-league.svg"
+                                    width="500px" style="border-radius: 10px;"></img></a></div>
+                        <p class="PLetters ProgramName" style="width: 550px; margin: 0;">《火箭联盟》游戏插件</p>
+                        <p class="PLetters ProgramIntroduction">制作了一个辅助向的游戏插件，允许玩家在自由训练场内使用一些辅助功能。</p>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right"><img src="img/Arrow-Right.svg"></button>
+
+            <div class="dots-container">
+                <div class="dots" id="dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Page-->
+    <section id="Contact">
+        <div class="divPage">
+            <p class="CyanLetter">联系:</p>
+            <p class="PLetters">不管是什么原因 都欢迎你联系我！</p>
+        </div>
+        <div class="ContactList">
+            <p class="PLetters Contacts">Gmail:yan050128@gmail.com</p><a href="mailto:yan050128@gmail.com?subject=来自Yan的个人网站的邮件&body=请输入内容"><img alt="Gmailicon" class="ContactIcons" src="img/official-gmail-icon-2020-.svg"></a>
+            <p class="PLetters Contacts">QQ:2096197180</p><a href="#"><img class="ContactIcons" id="copyLink"
+                    src="img/qq-2.svg"></img></a>
+        </div>
+        <div class="ContactList">
+            <p class="PLetters Contacts">Github:Y-a-n-0</p><a target="_blank" href="https://github.com/Y-a-n-0"><img
+                    class="ContactIcons" src="img/github-icon-1.svg"></img></a>
+            <p class="PLetters Contacts">School:华东理工大学 徐汇校区</p><a target="_blank"
+                href="https://www.google.com/maps/place/%E5%8D%8E%E4%B8%9C%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6/@31.1411954,121.4239391,17z/data=!4m6!3m5!1s0x35b2635fa3d40407:0xa2e03588e259541f!8m2!3d31.140897!4d121.425248!16zL20vMDNweHht?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"><img
+                    class="ContactIcons" src="img/locator-1093167.svg"></img></a>
+        </div>
+    </section>
+
+    <!--Other Page-->
+    <section id="Other">
+        <div class="divPage">
+            <p class="CyanLetter">其他:</p>
+            <p class="PLetters Tips" style="font-size: 20px; ">不知道放啥先放着吧(</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

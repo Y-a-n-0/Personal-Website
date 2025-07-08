@@ -1,0 +1,29 @@
+.Tips{
+    font-size: 20px;
+    text-indent: 0;
+}
+
+.ContactList{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.Contacts{
+    width: fit-content;
+    color: #14FFEC;
+    text-shadow: #14FFEC 0 0 5px;
+}
+
+.ContactIcons{
+    width: 40px;
+    margin-left: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ContactIcons:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px white);
+}
